@@ -21,13 +21,15 @@ public class Main {
 
         while(ask) {
             System.out.println("Welcome to the BankAccount.");
-            System.out.println("***PLACEHOLDER - HOW IT WORKS***");
+            System.out.println("***BankAccount - Balance***");
 
             String[] questions = {
                     "Please enter Bank Account Number:",
                     "Please enter Employee Full Name:",
-                    "Please enter Balance:",
-            };
+                    "Please enter Checking Account Balance:",
+                    "Please enter deposit:",
+
+                    };
 
             List<String> answers = new ArrayList<>();
 
@@ -37,13 +39,11 @@ public class Main {
                 answers.add(userEntry);
             }
 
-            String salaryString = answers.get(3);
-            int salary = Integer.parseInt(salaryString);
+            //String BalanceString = answers.get(3);
+            //int Balance = Integer.parseInt(balanceString);
 
-            int monthlySalary = salary / 12;
+            //int balanceBankAccount = balance/3;
 
-            //System.out.println("Monthly Salary: " + monthlySalary);
-            //System.out.println("Twice a Month Salary: " + twiceMonthSalary);
             //System.out.println("Paid every two weeks Salary: " + everyTwoWeeksSalary);
 
             System.out.println("Do you want to enter another employee?");
